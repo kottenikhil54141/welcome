@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function myfn(event){
+                event.preventDefault();
+                let name=document.getElementById("name").value;
+                if(name){
+                    alert("Welcome" + name + "!");
+                }else{
+                    alert("Enter ur name");
+
+                
+                }
+            }
+        </script>
+    </head>
+    <body>
+        
+        <h1>Welcome this is my js</h1>
+        <form>    
+            <label for="name">Customer name:</label>
+            <input type="text" id="name"> 
+            <button onclick="myfn(event)">Click</button>
+            </form>
+            <p id="result"></p>
+
+                
+        
+    </body>
+
+
+</html>
